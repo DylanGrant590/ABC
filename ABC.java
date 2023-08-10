@@ -20,8 +20,8 @@ Random rand = new Random();
 String[] letters = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", 
 		"l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
 
-public void display() {
 //Prints a welcome statement to the user.
+public void display() {
 System.out.println("##############################");
 System.out.println("#Welcome to ABC Fast or Slow!#");
 System.out.println("##############################");
@@ -46,23 +46,28 @@ if(answer.equals("fast") || answer.equals("slow")) {
 	display();
 }
 System.out.println("\nPlease enter a name beginning with that letter: ");
-String name = scanner.nextLine().trim().toLowerCase();	
+String name = scanner.nextLine().trim().toLowerCase();
+System.out.println("\nYou entered " + name + ".");
 score += 1;
 	
 System.out.println("\nPlease enter a name of an animal beginning with that letter: ");
 String animal = scanner.nextLine().trim().toLowerCase();	
+System.out.println("\nYou entered " + animal + ".");
 score += 1;
 
 System.out.println("\nPlease enter the name of a place beginning with that letter: ");
 String place = scanner.nextLine().trim().toLowerCase();	
+System.out.println("\nYou entered " + place + ".");
 score += 1;
 
 System.out.println("\nPlease enter the name of a plant beginning with that letter: ");
 String plant = scanner.nextLine().trim().toLowerCase();	
+System.out.println("\nYou entered " + plant + ".");
 score += 1;
 
 System.out.println("\nPlease enter the name of a thing beginning with that letter: ");
 String thing = scanner.nextLine().trim().toLowerCase();	
+System.out.println("\nYou entered " + thing + ".");
 score += 1;
 scanner.close();
 
